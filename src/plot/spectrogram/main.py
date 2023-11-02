@@ -12,4 +12,6 @@ plt.figure(figsize=(10, 5))
 librosa.display.specshow(spectrogram_db, x_axis='time', y_axis='mel')
 plt.colorbar(format='%+2.0f dB')
 plt.title('Spectrogram')
+
+plt.savefig('spectrogram.png')
 plt.show()
